@@ -1,0 +1,13 @@
+<h1>Important Announcements</h1>
+
+<ul>
+  {{#each model as |announcement|}}
+    {{announcement-tile announcement=announcement}}
+  {{/each}}
+</ul>
+
+{{new-announcement saveAnnouncement2="saveAnnouncement3"}}
+{{announcement-detail announcement=model destroyAnnouncement="destroyAnnouncement"}}
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
